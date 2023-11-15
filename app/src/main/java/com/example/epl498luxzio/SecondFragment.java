@@ -9,7 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.epl498luxzio.databinding.FragmentSecondBinding;
+import com.example.EPL498Luxzio.R;
+import com.example.EPL498Luxzio.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
 

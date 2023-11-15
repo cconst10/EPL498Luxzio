@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.EPL498Luxzio.app-mergeDebugResources-58:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\anast\\.gradle\\caches\\transforms-3\\30fa576dd46f53b2c60c05717a1b93b3\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
