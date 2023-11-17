@@ -2,7 +2,7 @@ package com.example.epl498luxzio;
 
 import android.os.Bundle;
 
-import com.example.EPL498Luxzio.R;
+import com.example.epl498luxzio.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.EPL498Luxzio.databinding.ActivityMainBinding;
+import com.example.epl498luxzio.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.EPL498Luxzio"
+    namespace = "com.example.epl498luxzio"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.EPL498Luxzio"
+        applicationId = "com.example.epl498luxzio"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

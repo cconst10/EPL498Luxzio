@@ -1,6 +1,0 @@
-com.example.EPL498Luxzio.test.app-core-1.5.0-0 C:\Users\anast\.gradle\caches\transforms-3\5654e56883e4af04dd06a3d7a21e5c44\transformed\core-1.5.0\res
-com.example.EPL498Luxzio.test.app-annotation-experimental-1.3.0-1 C:\Users\anast\.gradle\caches\transforms-3\674abdd3e6d434fecb83bf3d2cd12725\transformed\annotation-experimental-1.3.0\res
-com.example.EPL498Luxzio.test.app-androidTest-2 C:\Users\anast\OneDrive\Desktop\CS-498_MobileApplications\EPL498Luxzio\app\build\generated\res\resValues\androidTest\debug
-com.example.EPL498Luxzio.test.app-mergeDebugAndroidTestResources-3 C:\Users\anast\OneDrive\Desktop\CS-498_MobileApplications\EPL498Luxzio\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.EPL498Luxzio.test.app-mergeDebugAndroidTestResources-4 C:\Users\anast\OneDrive\Desktop\CS-498_MobileApplications\EPL498Luxzio\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.EPL498Luxzio.test.app-merged_res-5 C:\Users\anast\OneDrive\Desktop\CS-498_MobileApplications\EPL498Luxzio\app\build\intermediates\merged_res\debugAndroidTest
