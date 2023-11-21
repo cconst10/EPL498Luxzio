@@ -11,7 +11,6 @@
     <string name="google_app_id" translatable="false">1:433521477747:android:561d6202b8afa82e5b8206</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAo4uJwWoyas3wPIaxlEySoD4eTd4_kqWI</string>
     <string name="google_storage_bucket" translatable="false">epl498-f5f0c.appspot.com</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -52,7 +51,6 @@
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">epl498-f5f0c</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="settings_activity_label">Settings</string>
     <style name="Base.Theme.EPL498Luxzio" parent="Theme.Material3.DayNight.NoActionBar">
         
         

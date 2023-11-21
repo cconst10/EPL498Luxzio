@@ -4,24 +4,12 @@
         "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_second.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/fragment_settings_activity.xml",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_settings_activity.xml"
-    },
-    {
         "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/fragment_first.xml",
         "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_first.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/content_main.xml",
         "source": "com.example.epl498luxzio.app-main-62:/layout/content_main.xml"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/fragment_language.xml",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_language.xml"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/fragment_change_p_w.xml",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_change_p_w.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-mergeDebugResources-59:/layout/activity_main.xml",
