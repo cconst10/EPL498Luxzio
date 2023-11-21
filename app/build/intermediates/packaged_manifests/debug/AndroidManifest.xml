@@ -59,6 +59,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.epl498luxzio.settingsActivity"
+            android:label="@string/settings_activity_label"
+            android:theme="@style/Theme.EPL498Luxzio" >
+        </activity>
+
         <!--
         Service for holding metadata. Cannot be instantiated.
         Metadata will be merged from other manifests.

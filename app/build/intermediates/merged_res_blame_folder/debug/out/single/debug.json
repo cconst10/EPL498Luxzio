@@ -4,28 +4,20 @@
         "source": "com.example.epl498luxzio.app-main-62:/menu/menu_main.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_notifications_icon.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/notifications_icon.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_notifications.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/notifications.png"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher.webp.flat",
@@ -44,12 +36,8 @@
         "source": "com.example.epl498luxzio.app-main-62:/layout/content_main.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_first.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_first.xml"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_change_p_w.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_change_p_w.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_backup_rules.xml.flat",
@@ -76,12 +64,56 @@
         "source": "com.example.epl498luxzio.app-main-62:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_second.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_second.xml"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_settings_activity.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_settings_activity.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/navigation_nav_graph.xml.flat",
         "source": "com.example.epl498luxzio.app-main-62:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_more.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/more.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_account.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/account.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_language.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_language.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_first.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_back.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/back.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_second.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_second.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",

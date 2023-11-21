@@ -2990,8 +2990,10 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable account
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3061,6 +3063,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable more
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3110,6 +3113,8 @@ drawable notification_icon_background
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
+drawable notifications
+drawable notifications_icon
 drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3164,6 +3169,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountIcon
 id actionDown
 id actionDownUp
 id actionUp
@@ -3209,6 +3215,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backIcon
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3220,6 +3227,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnChangePassword
+id btnDataPrivacy
+id btnEditProfile
+id btnLanguage
+id btnLocation
+id btnLogout
 id buttonPanel
 id button_first
 id button_second
@@ -3299,6 +3312,9 @@ id easeOut
 id east
 id edge
 id edit_query
+id edtConfirmPassword
+id edtCurrentPassword
+id edtNewPassword
 id elastic
 id embed
 id end
@@ -3337,6 +3353,12 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id headerAccount
+id headerChangePassword
+id headerLanguage
+id headerMore
+id headerNotifications
+id headerSettings
 id header_title
 id hideable
 id home
@@ -3409,6 +3431,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id moreIcon
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3456,6 +3479,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notificationsIcon
 id off
 id on
 id onAttachStateChangeListener
@@ -3483,6 +3507,10 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id radioAppNotifications
+id radioEnglish
+id radioGreek
+id radioNotifications
 id ratio
 id rectangles
 id reverseSawtooth
@@ -3548,6 +3576,9 @@ id snackbar_text
 id snap
 id snapMargins
 id south
+id space
+id spaceChangePassword
+id spaceLanguage
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3779,8 +3810,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_change_p_w
 layout fragment_first
+layout fragment_language
 layout fragment_second
+layout fragment_settings_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3919,6 +3953,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -4037,6 +4072,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string second_fragment_label
+string settings_activity_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
