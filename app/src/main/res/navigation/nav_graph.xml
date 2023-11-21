@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LoginScreenFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -15,6 +15,7 @@
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.epl498luxzio.SecondFragment"
@@ -23,9 +24,26 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/LoginScreenFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/LoginScreenFragment"
+        android:name="com.example.epl498luxzio.LoginScreenFragment"
+        tools:layout="@layout/fragment_login_screen">
 
+        <action
+            android:id="@+id/sign_up_button"
+            app:destination="@id/SignUpScreenFragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/SignUpScreenFragment"
+        android:name="com.example.epl498luxzio.SignUpScreenFragment"
+        tools:layout="@layout/fragment_sign_up_screen">
+
+        <action
+            android:id="@+id/login_button"
+            app:destination="@id/LoginScreenFragment" />
+    </fragment>
 </navigation>
