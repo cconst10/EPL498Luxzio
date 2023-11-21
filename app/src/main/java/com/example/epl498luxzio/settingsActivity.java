@@ -20,17 +20,17 @@ public class settingsActivity extends AppCompatActivity {
 
 
         // Account Options
-        EditText btnEditProfile = findViewById(R.id.btnEditProfile);
-        EditText btnChangePassword = findViewById(R.id.btnChangePassword);
-        EditText btnDataPrivacy = findViewById(R.id.btnDataPrivacy);
+        Button btnEditProfile = findViewById(R.id.btnEditProfile);
+        Button btnChangePassword = findViewById(R.id.btnChangePassword);
+        Button btnDataPrivacy = findViewById(R.id.btnDataPrivacy);
 
         // Notifications Options
         RadioButton radioNotifications = findViewById(R.id.radioNotifications);
         RadioButton radioAppNotifications = findViewById(R.id.radioAppNotifications);
 
         // More Options
-        EditText btnLanguage = findViewById(R.id.btnLanguage);
-        EditText btnLocation = findViewById(R.id.btnLocation);
+        Button btnLanguage = findViewById(R.id.btnLanguage);
+        Button btnLocation = findViewById(R.id.btnLocation);
 
         // Set click listeners for buttons (no functionality, just transitioning to other screens)
         btnEditProfile.setOnClickListener(new View.OnClickListener() {
