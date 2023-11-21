@@ -1,4 +1,4 @@
-#Sat Nov 18 23:45:56 EET 2023
+#Tue Nov 21 16:52:54 EET 2023
 base.0=/home/cconst/EPL498LuxzioClone/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/home/cconst/EPL498LuxzioClone/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/home/cconst/EPL498LuxzioClone/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex

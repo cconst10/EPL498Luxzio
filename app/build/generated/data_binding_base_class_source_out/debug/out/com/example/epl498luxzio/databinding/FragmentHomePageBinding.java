@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -46,7 +47,43 @@ public final class FragmentHomePageBinding implements ViewBinding {
   public final EditText enterLocationField;
 
   @NonNull
+  public final TextView findbytype;
+
+  @NonNull
+  public final ImageView hotel1;
+
+  @NonNull
+  public final TextView hotel1text;
+
+  @NonNull
+  public final ImageView hotel2;
+
+  @NonNull
+  public final TextView hotel2text;
+
+  @NonNull
+  public final ImageView hotel3;
+
+  @NonNull
+  public final TextView hotel3text;
+
+  @NonNull
+  public final ImageView hotel4;
+
+  @NonNull
+  public final TextView hotel4text;
+
+  @NonNull
   public final ImageView settingsbutton;
+
+  @NonNull
+  public final ImageView type1;
+
+  @NonNull
+  public final ImageView type2;
+
+  @NonNull
+  public final ImageView type3;
 
   @NonNull
   public final View whiteSection;
@@ -56,7 +93,11 @@ public final class FragmentHomePageBinding implements ViewBinding {
       @NonNull ImageView appLogo, @NonNull EditText checkInDateField,
       @NonNull EditText checkOutDateField, @NonNull RelativeLayout darkPurpleSection,
       @NonNull RelativeLayout darkerGrayishPurpleSection, @NonNull EditText enterLocationField,
-      @NonNull ImageView settingsbutton, @NonNull View whiteSection) {
+      @NonNull TextView findbytype, @NonNull ImageView hotel1, @NonNull TextView hotel1text,
+      @NonNull ImageView hotel2, @NonNull TextView hotel2text, @NonNull ImageView hotel3,
+      @NonNull TextView hotel3text, @NonNull ImageView hotel4, @NonNull TextView hotel4text,
+      @NonNull ImageView settingsbutton, @NonNull ImageView type1, @NonNull ImageView type2,
+      @NonNull ImageView type3, @NonNull View whiteSection) {
     this.rootView = rootView;
     this.SearchSubmitButton = SearchSubmitButton;
     this.adultsChildrenRoomsField = adultsChildrenRoomsField;
@@ -66,7 +107,19 @@ public final class FragmentHomePageBinding implements ViewBinding {
     this.darkPurpleSection = darkPurpleSection;
     this.darkerGrayishPurpleSection = darkerGrayishPurpleSection;
     this.enterLocationField = enterLocationField;
+    this.findbytype = findbytype;
+    this.hotel1 = hotel1;
+    this.hotel1text = hotel1text;
+    this.hotel2 = hotel2;
+    this.hotel2text = hotel2text;
+    this.hotel3 = hotel3;
+    this.hotel3text = hotel3text;
+    this.hotel4 = hotel4;
+    this.hotel4text = hotel4text;
     this.settingsbutton = settingsbutton;
+    this.type1 = type1;
+    this.type2 = type2;
+    this.type3 = type3;
     this.whiteSection = whiteSection;
   }
 
@@ -145,9 +198,81 @@ public final class FragmentHomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.findbytype;
+      TextView findbytype = ViewBindings.findChildViewById(rootView, id);
+      if (findbytype == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel1;
+      ImageView hotel1 = ViewBindings.findChildViewById(rootView, id);
+      if (hotel1 == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel1text;
+      TextView hotel1text = ViewBindings.findChildViewById(rootView, id);
+      if (hotel1text == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel2;
+      ImageView hotel2 = ViewBindings.findChildViewById(rootView, id);
+      if (hotel2 == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel2text;
+      TextView hotel2text = ViewBindings.findChildViewById(rootView, id);
+      if (hotel2text == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel3;
+      ImageView hotel3 = ViewBindings.findChildViewById(rootView, id);
+      if (hotel3 == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel3text;
+      TextView hotel3text = ViewBindings.findChildViewById(rootView, id);
+      if (hotel3text == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel4;
+      ImageView hotel4 = ViewBindings.findChildViewById(rootView, id);
+      if (hotel4 == null) {
+        break missingId;
+      }
+
+      id = R.id.hotel4text;
+      TextView hotel4text = ViewBindings.findChildViewById(rootView, id);
+      if (hotel4text == null) {
+        break missingId;
+      }
+
       id = R.id.settingsbutton;
       ImageView settingsbutton = ViewBindings.findChildViewById(rootView, id);
       if (settingsbutton == null) {
+        break missingId;
+      }
+
+      id = R.id.type1;
+      ImageView type1 = ViewBindings.findChildViewById(rootView, id);
+      if (type1 == null) {
+        break missingId;
+      }
+
+      id = R.id.type2;
+      ImageView type2 = ViewBindings.findChildViewById(rootView, id);
+      if (type2 == null) {
+        break missingId;
+      }
+
+      id = R.id.type3;
+      ImageView type3 = ViewBindings.findChildViewById(rootView, id);
+      if (type3 == null) {
         break missingId;
       }
 
@@ -159,7 +284,9 @@ public final class FragmentHomePageBinding implements ViewBinding {
 
       return new FragmentHomePageBinding((FrameLayout) rootView, SearchSubmitButton,
           adultsChildrenRoomsField, appLogo, checkInDateField, checkOutDateField, darkPurpleSection,
-          darkerGrayishPurpleSection, enterLocationField, settingsbutton, whiteSection);
+          darkerGrayishPurpleSection, enterLocationField, findbytype, hotel1, hotel1text, hotel2,
+          hotel2text, hotel3, hotel3text, hotel4, hotel4text, settingsbutton, type1, type2, type3,
+          whiteSection);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

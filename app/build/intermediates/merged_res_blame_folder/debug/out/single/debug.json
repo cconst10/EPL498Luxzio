@@ -12,12 +12,20 @@
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_notifications.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/notifications.png"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/font_questrialfont.ttf.flat",
         "source": "com.example.epl498luxzio.app-main-62:/font/questrialfont.ttf"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_star.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/star.png"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_activity_main.xml.flat",
@@ -36,12 +44,20 @@
         "source": "com.example.epl498luxzio.app-main-62:/layout/content_main.xml"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_change_p_w.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_change_p_w.xml"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_olympiclagoonresorts.jpg.flat",
         "source": "com.example.epl498luxzio.app-main-62:/drawable/olympiclagoonresorts.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_backup_rules.xml.flat",
         "source": "com.example.epl498luxzio.app-main-62:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_anassatype1.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/anassatype1.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_ic_launcher_background.xml.flat",
@@ -64,6 +80,10 @@
         "source": "com.example.epl498luxzio.app-main-62:/drawable/ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_settings_activity.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_settings_activity.xml"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_fourseasonshotel.jpg.flat",
         "source": "com.example.epl498luxzio.app-main-62:/drawable/fourseasonshotel.jpg"
     },
@@ -72,8 +92,16 @@
         "source": "com.example.epl498luxzio.app-main-62:/navigation/nav_graph.xml"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_more.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/more.png"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_account.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/account.png"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
@@ -84,6 +112,10 @@
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_columbiatype2.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/columbiatype2.jpg"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
@@ -92,8 +124,16 @@
         "source": "com.example.epl498luxzio.app-main-62:/drawable/settingsicon.png"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_language.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_language.xml"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_luxziologo.png.flat",
         "source": "com.example.epl498luxzio.app-main-62:/drawable/luxziologo.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_about_page.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_about_page.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_first.xml.flat",
@@ -102,6 +142,14 @@
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_back.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/back.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_alasiatype3.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/alasiatype3.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_elysiumhotel.jpg.flat",

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- top of screen dark background with logo -->
+
+        <!-- dark purple background, behind hotel photo -->
+        <RelativeLayout
+            android:id="@+id/darkerGrayishPurpleSection"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#343331"
+            android:gravity="center">
+
+            <!-- app logo centered, top of screen -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="550px"
+                android:layout_height="550px"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/luxziologo" />
+
+        </RelativeLayout>
+
+        <!-- Dark Purple Section (Remaining bottom part of the screen with existing background color) -->
+        <RelativeLayout
+            android:id="@+id/darkPurpleSection"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#434055">
+            <!-- Empty content, keeping the existing background color -->
+
+            <!-- Image covering the dark purple section -->
+
+            <ImageView
+                android:id="@+id/star0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/topImage"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:background="#434055"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/topImage"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:background="#434055"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/topImage"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp"
+                android:background="#434055"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/topImage"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp"
+                android:background="#434055"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/topImage"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="10dp"
+                android:background="#434055"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/topImage"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="51dp"
+                android:background="#434055"
+                android:src="@drawable/fourseasonshotel" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-41dp"
+                android:fontFamily="@font/questrialfont"
+                android:text="Four Seasons Hotel"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <!-- Rectangle with text and star images
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#343331"
+            android:layout_marginTop="-52dp"
+            android:padding="16dp">
+         -->
+
+
+        <!-- White Section (Remaining bottom part of the screen with existing background color) -->
+        <LinearLayout
+            android:id="@+id/whiteSection"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <!-- TextView taking about the size of the white part -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|left"
+                android:padding="16dp"
+                android:text="About: \n\nAddress:\n\n67-69 Amathountos Avenue, AgiosTychonas, 4532 Limassol, Cyprus
+\n\nMost Popular Facilities:\nBabysitting/Child services\nSteam room\nKid's clib\nYoga classes\n3swimming pools\nConcierge\nRoom service\nEvening Entertainment\nWater Sports facilities on-site\nFitness Centre\n\nAvailability:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
