@@ -4,36 +4,28 @@
         "source": "com.example.epl498luxzio.app-main-62:/menu/menu_main.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/font_questrialfont.ttf.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/font/questrialfont.ttf"
+    },
+    {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_activity_main.xml.flat",
         "source": "com.example.epl498luxzio.app-main-62:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_home_page.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_home_page.xml"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -44,12 +36,8 @@
         "source": "com.example.epl498luxzio.app-main-62:/layout/content_main.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_first.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_first.xml"
-    },
-    {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_olympiclagoonresorts.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/olympiclagoonresorts.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_backup_rules.xml.flat",
@@ -76,12 +64,56 @@
         "source": "com.example.epl498luxzio.app-main-62:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_second.xml.flat",
-        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_second.xml"
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_fourseasonshotel.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/fourseasonshotel.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/navigation_nav_graph.xml.flat",
         "source": "com.example.epl498luxzio.app-main-62:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_settingsicon.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/settingsicon.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_luxziologo.png.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/luxziologo.png"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_first.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_elysiumhotel.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/elysiumhotel.jpg"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/layout_fragment_second.xml.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.epl498luxzio.app-merged_res-60:/drawable_amarandehotel.jpg.flat",
+        "source": "com.example.epl498luxzio.app-main-62:/drawable/amarandehotel.jpg"
     },
     {
         "merged": "com.example.epl498luxzio.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",

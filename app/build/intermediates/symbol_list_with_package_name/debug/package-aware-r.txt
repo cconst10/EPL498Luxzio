@@ -2990,6 +2990,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable amarandehotel
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3024,6 +3025,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable elysiumhotel
+drawable fourseasonshotel
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3040,6 +3043,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable luxziologo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3111,9 +3115,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable olympiclagoonresorts
+drawable settingsicon
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font questrialfont
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3127,6 +3134,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SearchSubmitButton
 id SecondFragment
 id TOP_END
 id TOP_START
@@ -3192,6 +3200,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id adultsChildrenRoomsField
 id alertTitle
 id aligned
 id all
@@ -3202,6 +3211,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appLogo
 id arc
 id asConfigured
 id async
@@ -3235,6 +3245,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkInDateField
+id checkOutDateField
 id checkbox
 id checked
 id chronometer
@@ -3263,6 +3275,8 @@ id custom
 id customPanel
 id cut
 id dark
+id darkPurpleSection
+id darkerGrayishPurpleSection
 id dataBinding
 id date_picker_actions
 id decelerate
@@ -3305,6 +3319,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id enterLocationField
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3531,6 +3546,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingsbutton
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3637,6 +3653,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id west
+id whiteSection
 id wide
 id withText
 id with_icon
@@ -3780,6 +3797,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_first
+layout fragment_home_page
 layout fragment_second
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3919,6 +3937,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
