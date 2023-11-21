@@ -4,7 +4,7 @@
             "outputFile": "com.example.epl498luxzio.app-mergeDebugResources-58:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/home/cconst/.gradle/caches/transforms-3/30fa576dd46f53b2c60c05717a1b93b3/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "source": "C:\\Users\\anast\\.gradle\\caches\\transforms-3\\30fa576dd46f53b2c60c05717a1b93b3\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

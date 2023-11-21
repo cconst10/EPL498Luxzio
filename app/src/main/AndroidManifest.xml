@@ -23,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".settingsActivity"
+            android:label="@string/settings_activity_label"
+            android:theme="@style/Theme.EPL498Luxzio">
+        </activity>
+
     </application>
 
 </manifest>
