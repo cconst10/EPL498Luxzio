@@ -15,15 +15,7 @@
 
         <!-- Add more space -->
 
-        <ImageView
-            android:id="@+id/backIcon"
-            android:layout_width="77dp"
-            android:layout_height="87dp"
-            android:layout_below="@id/headerSettings"
-            android:layout_marginTop="-73dp"
-            android:layout_marginEnd="8dp"
-            android:padding="16dp"
-            android:src="@drawable/back" />
+
 
         <TextView
             android:id="@+id/headerSettings"
@@ -33,8 +25,7 @@
             android:text="Settings"
             android:textColor="@android:color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_toEndOf="@id/backIcon" />
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/space"
@@ -137,7 +128,8 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Notifications" />
+            android:text="Notifications"
+            android:clickable="true"/>
 
         <RadioButton
             android:id="@+id/radioAppNotifications"
@@ -148,7 +140,8 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="App Notifications" />
+            android:text="App Notifications"
+            android:clickable="true"/>
 
         <!-- More Header -->
 

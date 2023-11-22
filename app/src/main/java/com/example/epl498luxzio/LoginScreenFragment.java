@@ -1,26 +1,20 @@
 package com.example.epl498luxzio;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LoginScreenFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+
 public class LoginScreenFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -28,15 +22,6 @@ public class LoginScreenFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment LoginScreenFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static LoginScreenFragment newInstance(String param1, String param2) {
         LoginScreenFragment fragment = new LoginScreenFragment();
         Bundle args = new Bundle();
@@ -59,6 +44,32 @@ public class LoginScreenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login_screen, container, false);
+        View view = inflater.inflate(R.layout.fragment_login_screen, container, false);
+
+        // Find the Sign Up button in your layout
+        Button signUpButton = view.findViewById(R.id.sign_up_button);
+
+        // Set a click listener on the Sign Up button
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Use Navigation to navigate to the SignUpScreenFragment
+                Navigation.findNavController(v).navigate(R.id.sign_up_button);
+            }
+        });
+
+        // Find the Log In button in your layout
+        Button logInButton = view.findViewById(R.id.login_button);
+
+        // Set a click listener on the Log In button
+        logInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Use Navigation to navigate to the HomePageFragment
+                Navigation.findNavController(v).navigate(R.id.login_button);
+            }
+        });
+
+        return view;
     }
 }

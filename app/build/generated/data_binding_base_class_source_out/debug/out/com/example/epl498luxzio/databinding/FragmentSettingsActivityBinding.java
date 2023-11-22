@@ -4,7 +4,7 @@ package com.example.epl498luxzio.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
@@ -26,25 +26,22 @@ public final class FragmentSettingsActivityBinding implements ViewBinding {
   public final ImageView accountIcon;
 
   @NonNull
-  public final ImageView backIcon;
+  public final Button btnChangePassword;
 
   @NonNull
-  public final EditText btnChangePassword;
+  public final Button btnDataPrivacy;
 
   @NonNull
-  public final EditText btnDataPrivacy;
+  public final Button btnEditProfile;
 
   @NonNull
-  public final EditText btnEditProfile;
+  public final Button btnLanguage;
 
   @NonNull
-  public final EditText btnLanguage;
+  public final Button btnLocation;
 
   @NonNull
-  public final EditText btnLocation;
-
-  @NonNull
-  public final EditText btnLogout;
+  public final Button btnLogout;
 
   @NonNull
   public final TextView headerAccount;
@@ -74,17 +71,15 @@ public final class FragmentSettingsActivityBinding implements ViewBinding {
   public final View space;
 
   private FragmentSettingsActivityBinding(@NonNull ScrollView rootView,
-      @NonNull ImageView accountIcon, @NonNull ImageView backIcon,
-      @NonNull EditText btnChangePassword, @NonNull EditText btnDataPrivacy,
-      @NonNull EditText btnEditProfile, @NonNull EditText btnLanguage,
-      @NonNull EditText btnLocation, @NonNull EditText btnLogout, @NonNull TextView headerAccount,
+      @NonNull ImageView accountIcon, @NonNull Button btnChangePassword,
+      @NonNull Button btnDataPrivacy, @NonNull Button btnEditProfile, @NonNull Button btnLanguage,
+      @NonNull Button btnLocation, @NonNull Button btnLogout, @NonNull TextView headerAccount,
       @NonNull TextView headerMore, @NonNull TextView headerNotifications,
       @NonNull TextView headerSettings, @NonNull ImageView moreIcon,
       @NonNull ImageView notificationsIcon, @NonNull RadioButton radioAppNotifications,
       @NonNull RadioButton radioNotifications, @NonNull View space) {
     this.rootView = rootView;
     this.accountIcon = accountIcon;
-    this.backIcon = backIcon;
     this.btnChangePassword = btnChangePassword;
     this.btnDataPrivacy = btnDataPrivacy;
     this.btnEditProfile = btnEditProfile;
@@ -135,44 +130,38 @@ public final class FragmentSettingsActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.backIcon;
-      ImageView backIcon = ViewBindings.findChildViewById(rootView, id);
-      if (backIcon == null) {
-        break missingId;
-      }
-
       id = R.id.btnChangePassword;
-      EditText btnChangePassword = ViewBindings.findChildViewById(rootView, id);
+      Button btnChangePassword = ViewBindings.findChildViewById(rootView, id);
       if (btnChangePassword == null) {
         break missingId;
       }
 
       id = R.id.btnDataPrivacy;
-      EditText btnDataPrivacy = ViewBindings.findChildViewById(rootView, id);
+      Button btnDataPrivacy = ViewBindings.findChildViewById(rootView, id);
       if (btnDataPrivacy == null) {
         break missingId;
       }
 
       id = R.id.btnEditProfile;
-      EditText btnEditProfile = ViewBindings.findChildViewById(rootView, id);
+      Button btnEditProfile = ViewBindings.findChildViewById(rootView, id);
       if (btnEditProfile == null) {
         break missingId;
       }
 
       id = R.id.btnLanguage;
-      EditText btnLanguage = ViewBindings.findChildViewById(rootView, id);
+      Button btnLanguage = ViewBindings.findChildViewById(rootView, id);
       if (btnLanguage == null) {
         break missingId;
       }
 
       id = R.id.btnLocation;
-      EditText btnLocation = ViewBindings.findChildViewById(rootView, id);
+      Button btnLocation = ViewBindings.findChildViewById(rootView, id);
       if (btnLocation == null) {
         break missingId;
       }
 
       id = R.id.btnLogout;
-      EditText btnLogout = ViewBindings.findChildViewById(rootView, id);
+      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
       if (btnLogout == null) {
         break missingId;
       }
@@ -231,7 +220,7 @@ public final class FragmentSettingsActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsActivityBinding((ScrollView) rootView, accountIcon, backIcon,
+      return new FragmentSettingsActivityBinding((ScrollView) rootView, accountIcon,
           btnChangePassword, btnDataPrivacy, btnEditProfile, btnLanguage, btnLocation, btnLogout,
           headerAccount, headerMore, headerNotifications, headerSettings, moreIcon,
           notificationsIcon, radioAppNotifications, radioNotifications, space);

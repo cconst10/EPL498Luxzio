@@ -1,110 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageFragment">
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePageFragment">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/darkerGrayishPurpleSection"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:background="#343331"
+        android:gravity="center">
 
-        <!-- top of screen dark background with logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/luxziologo" />
 
-        <!-- dark purple background, behind search form -->
-        <RelativeLayout
-            android:id="@+id/darkerGrayishPurpleSection"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#343331"
-            android:gravity="center">
-
-            <!-- app logo centered, top of screen -->
-            <ImageView
-                android:id="@+id/appLogo"
-                android:layout_width="550px"
-                android:layout_height="550px"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="120dp"
-                android:src="@drawable/luxziologo" />
-
-            <!-- Settings Icon positioned at the bottom right of dark top of the screen section -->
-            <ImageView
-                android:id="@+id/settingsbutton"
-                android:layout_width="90px"
-                android:layout_height="90px"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="25dp"
-                android:layout_marginBottom="15dp"
-                android:src="@drawable/settingsicon" />
+        <ImageView
+            android:id="@+id/settingsbutton"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/settingsicon" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/darkPurpleSection"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="380dp"
             android:layout_weight="2"
+            android:layout_marginTop="120dp"
             android:background="#434055">
 
-            <!-- luxzio welcoming message, centered relative to logo -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentTop="true"
-                android:text="                  Welcome to Luxzio!\nLet's find your next accommodation"
-                android:textColor="#FFFFFF"
-                android:textSize="60px"
+                android:text=" Welcome to Luxzio!"
+                android:textColor="#E0FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="@font/questrialfont"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:layout_alignParentTop="true"
+                android:text="Let's find your next accommodation"
+                android:textColor="#E0FFFFFF"
+                android:textSize="16sp"
                 android:fontFamily="@font/questrialfont"/>
 
             <!-- Form Section -->
             <RelativeLayout
-                android:layout_width="375dp"
+                android:layout_width="350dp"
                 android:layout_height="310dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginLeft="20dp"
                 android:layout_below="@id/darkPurpleSection"
                 android:background="#813051"
                 android:padding="20dp"
                 tools:ignore="NotSibling">
 
-                <!-- Enter Location Field -->
-
-                <!-- Check In Date Field -->
                 <EditText
                     android:id="@+id/enterLocationField"
                     android:inputType="text"
+                    android:textSize="12sp"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:background="@android:color/white"
                     android:fontFamily="@font/questrialfont"
                     android:hint="Enter Location"
+                    android:textColor="#434055"
+                    android:textColorHint="#70020101"
                     android:padding="7dp" />
-
-                <!-- Check Out Date Field -->
-
-                <!-- Number of Adults, Children, and Rooms Field -->
 
                 <EditText
                     android:id="@+id/checkInDateField"
-                    android:inputType="date"
-                    android:layout_width="170dp"
-                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:textSize="12sp"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:layout_below="@id/enterLocationField"
                     android:layout_marginTop="21dp"
                     android:layout_weight="1"
                     android:background="@android:color/white"
                     android:hint="Check In Date"
+                    android:textColorHint="#70020101"
+                    android:textColor="#434055"
                     android:padding="10dp" />
 
                 <EditText
                     android:id="@+id/checkOutDateField"
-                    android:inputType="date"
-                    android:layout_width="170dp"
-                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:layout_width="160dp"
+                    android:textSize="12sp"
+                    android:layout_height="40dp"
                     android:layout_below="@id/enterLocationField"
                     android:layout_marginLeft="6dp"
                     android:layout_marginTop="21dp"
@@ -112,212 +121,178 @@
                     android:layout_weight="1"
                     android:background="@android:color/white"
                     android:hint="Check Out Date"
+                    android:textColorHint="#70020101"
+                    android:textColor="#434055"
                     android:padding="10dp" />
 
                 <EditText
                     android:id="@+id/adultsChildrenRoomsField"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_below="@id/checkInDateField"
                     android:layout_marginTop="17dp"
                     android:background="@android:color/white"
-                    android:hint="# of Adults | # of Children | # of Rooms"
+                    android:hint="# of Adults , # of Children , # of Rooms"
+                    android:textColorHint="#70020101"
+                    android:textSize="12sp"
+                    android:textColor="#434055"
                     android:padding="10dp" />
 
-                <EditText
-                    android:id="@+id/SearchSubmitButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_below="@id/adultsChildrenRoomsField"
-                    android:layout_marginTop="34dp"
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="200dp"
                     android:background="#462456"
-                    android:fontFamily="@font/questrialfont"
-                    android:padding="10dp" />
-
-                <!-- TextView for the "Search" label -->
-                <TextView
-                    android:layout_width="145dp"
-                    android:layout_height="54dp"
-                    android:layout_below="@id/SearchSubmitButton"
-                    android:layout_centerVertical="true"
-                    android:layout_marginTop="-40dp"
                     android:text="Search"
-                    android:layout_marginLeft="120dp"
-                    android:textColor="#FFFFFF"
-                    android:fontFamily="@font/questrialfont"
-                    android:textSize="26sp" />
-
-
+                    android:textSize="12sp"
+                    android:textColor="#E0FFFFFF" />
             </RelativeLayout>
         </RelativeLayout>
 
-        <!-- White Section (Remaining bottom part of the screen) -->
-
-        <!-- "best quality hotels title" label -->
-        <View
-            android:id="@+id/whiteSection"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF">
-
-
-
-        </View>
-
         <TextView
+            android:id="@+id/best_quality_hotels_in_cyprus"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/darkPurpleSection"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="-170dp"
-            android:fontFamily="@font/questrialfont"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="520dp"
             android:text="Best Quality Hotels in Cyprus"
-            android:textColor="#000000"
-            android:textSize="26sp" />
+            android:textColor="#353438"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-        <ImageView
-            android:id="@+id/hotel1"
-            android:layout_width="100dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="1dp"
-            android:src="@drawable/fourseasonshotel" />
-
-        <ImageView
-            android:id="@+id/hotel2"
-            android:layout_width="100dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="-110dp"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="103dp"
-            android:src="@drawable/elysiumhotel" />
-
-        <ImageView
-            android:id="@+id/hotel3"
-            android:layout_width="100dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="-110dp"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="206dp"
-            android:src="@drawable/olympiclagoonresorts" />
-
-        <ImageView
-            android:id="@+id/hotel4"
-            android:layout_width="100dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="-110dp"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="309dp"
-            android:src="@drawable/amarandehotel" />
-
-        <TextView
-            android:id="@+id/hotel1text"
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentTop="true"
-            android:text="FourSeasons"
-            android:textColor="#000000"
-            android:textSize="42px"
-            android:fontFamily="@font/questrialfont"/>
-
-        <TextView
-            android:id="@+id/hotel2text"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-31dp"
-            android:layout_marginLeft="104dp"
-            android:layout_alignParentTop="true"
-            android:text="Elysium Hotel"
-            android:layout_below="@id/hotel2"
-            android:textColor="#000000"
-            android:textSize="42px"
-            android:fontFamily="@font/questrialfont"/>
+            android:layout_marginTop="530dp">
 
+            <ImageView
+                android:id="@+id/four_seasons_hotel"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/four_seasons_hotel" />
+
+            <ImageView
+                android:id="@+id/elysium_hotel"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/four_seasons_hotel"
+                android:src="@drawable/elysium_hotel" />
+
+            <ImageView
+                android:id="@+id/olympic_lagoon_resorts"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/elysium_hotel"
+                android:src="@drawable/olympic_lagoon_resorts" />
+
+            <ImageView
+                android:id="@+id/amarande_hotel"
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/olympic_lagoon_resorts"
+                android:src="@drawable/amarande_hotel" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/hotel3text"
-            android:layout_width="wrap_content"
+            android:id="@+id/find_by_property_type"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/hotel3"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="205dp"
-            android:layout_marginTop="-17dp"
-            android:fontFamily="@font/questrialfont"
-            android:text="Olympic Lagoon"
-            android:textColor="#000000"
-            android:textSize="42px" />
-
-        <TextView
-            android:id="@+id/hotel4text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/hotel3"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="328dp"
-            android:layout_marginTop="-17dp"
-            android:fontFamily="@font/questrialfont"
-            android:text="Amarande"
-            android:textColor="#000000"
-            android:textSize="42px" />
-
-
-        <TextView
-            android:id="@+id/findbytype"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/hotel4text"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="-45dp"
-            android:fontFamily="@font/questrialfont"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="650dp"
             android:text="Find By Property Type"
-            android:textColor="#000000"
-            android:textSize="26sp" />
+            android:textColor="#353438"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-        <ImageView
-            android:id="@+id/type1"
-            android:layout_width="150dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="-130dp"
-            android:src="@drawable/anassatype1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="660dp">
 
-        <ImageView
-            android:id="@+id/type2"
-            android:layout_width="150dp"
-            android:layout_height="110dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="-130dp"
-            android:layout_marginLeft="150dp"
-            android:src="@drawable/columbiatype2" />
+            <ImageView
+                android:id="@+id/hotels"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/hotels" />
 
-        <ImageView
-            android:id="@+id/type3"
-            android:layout_width="150dp"
-            android:layout_height="130dp"
-            android:layout_below="@id/darkPurpleSection"
-            android:layout_marginLeft="285dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="-230dp"
-            android:src="@drawable/alasiatype3" />
+            <ImageView
+                android:id="@+id/apartments"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/hotels"
+                android:src="@drawable/apartments" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/villas"
+                android:layout_width="122dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/apartments"
+                android:src="@drawable/villas" />
+        </RelativeLayout>
 
+         <TextView
+            android:id="@+id/four_seasons_hotel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="617dp"
+            android:layout_marginLeft="9dp"
+            android:text="Four Seasons Hotel"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/elysium_hotel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="617dp"
+            android:layout_marginLeft="116dp"
+            android:text="Elysium Hotel"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/olympic_lagoon_resorts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="617dp"
+            android:layout_marginLeft="197dp"
+            android:text="Olympic Lagoon Res"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/amarande_hotel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="617dp"
+            android:layout_marginLeft="301dp"
+            android:text="Amarande Hotel"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
 
 </FrameLayout>
+</ScrollView>

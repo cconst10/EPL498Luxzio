@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.epl498luxzio.app-mergeDebugResources-58:/values-v16/values-v16.xml",
+            "outputFile": "com.example.epl498luxzio.app-mergeDebugResources-55:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/cconst/.gradle/caches/transforms-3/30fa576dd46f53b2c60c05717a1b93b3/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/home/cconst/.gradle/caches/transforms-3/7ba671ca6ecb5f79a55d78bf9a17f90c/transformed/core-1.9.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/cconst/.gradle/caches/transforms-3/bb0c33328311fe9f7241f3a9721e7ab7/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/cconst/.gradle/caches/transforms-3/f8227bd7f665d4b4f1bb68e7609fd698/transformed/core-1.9.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

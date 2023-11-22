@@ -1,8 +1,10 @@
 package com.example.epl498luxzio;
 
+import static android.content.ContentValues.TAG;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
@@ -11,6 +13,12 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+import android.widget.Toast;
+
 
 public class SplashActivity extends AppCompatActivity {
     private static final int SPLASH_DELAY = 8000; // Splash screen duration in milliseconds
@@ -101,5 +109,26 @@ public class SplashActivity extends AppCompatActivity {
             startActivity(mainIntent);
             finish();
         }, SPLASH_DELAY);
+
+        // Retrieve the FCM registration token
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+                            return;
+                        }
+
+                        // Get the FCM registration token
+                        String token = task.getResult();
+
+                        // TODO: do smth when opening the push notification
+                        // for now we just toast the firebase cloud messaging registration code
+                        String msg = "FCM Registration token: " + token;
+                        Log.d(TAG, msg);
+                        //Toast.makeText(SplashActivity.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "433521477747",
-    "project_id": "epl498-f5f0c",
-    "storage_bucket": "epl498-f5f0c.appspot.com"
+    "project_number": "366828665251",
+    "project_id": "luxzio",
+    "storage_bucket": "luxzio.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:433521477747:android:561d6202b8afa82e5b8206",
+        "mobilesdk_app_id": "1:366828665251:android:d6d554d445ce2aec01c216",
         "android_client_info": {
           "package_name": "com.example.epl498luxzio"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAo4uJwWoyas3wPIaxlEySoD4eTd4_kqWI"
+          "current_key": "AIzaSyC3SpggUNA0u-6xvJPmEvQzwH_2giIr9p4"
         }
       ],
       "services": {

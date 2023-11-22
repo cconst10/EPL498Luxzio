@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LoginScreenFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -15,6 +15,7 @@
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.epl498luxzio.SecondFragment"
@@ -23,9 +24,87 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/LoginScreenFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/LoginScreenFragment"
+        android:name="com.example.epl498luxzio.LoginScreenFragment"
+        tools:layout="@layout/fragment_login_screen">
+
+        <action
+            android:id="@+id/sign_up_button"
+            app:destination="@id/SignUpScreenFragment" />
+
+        <action
+            android:id="@+id/login_button"
+            app:destination="@id/HomePageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpScreenFragment"
+        android:name="com.example.epl498luxzio.SignUpScreenFragment"
+        tools:layout="@layout/fragment_sign_up_screen">
+
+        <action
+            android:id="@+id/login_button"
+            app:destination="@id/LoginScreenFragment" />
+
+        <action
+            android:id="@+id/sign_up_button"
+            app:destination="@id/LoginScreenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.epl498luxzio.SettingsFragment"
+        tools:layout="@layout/fragment_settings_activity">
+
+        <action
+            android:id="@+id/btnChangePassword"
+            app:destination="@id/ChangePW_Fragment" />
+
+        <action
+            android:id="@+id/btnLanguage"
+            app:destination="@id/LanguageFragment" />
+
+        <action
+            android:id="@+id/btnLogout"
+            app:destination="@id/LoginScreenFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/HomePageFragment"
+        android:name="com.example.epl498luxzio.HomePageFragment"
+        tools:layout="@layout/fragment_home_page">
+
+        <action
+            android:id="@+id/settingsbutton"
+            app:destination="@id/SettingsFragment" />
+
+        <action
+            android:id="@+id/four_seasons_hotel"
+            app:destination="@id/AboutPageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutPageFragment"
+        android:name="com.example.epl498luxzio.AboutPageFragment"
+        tools:layout="@layout/fragment_about_page">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChangePW_Fragment"
+        android:name="com.example.epl498luxzio.ChangePW_Fragment"
+        tools:layout="@layout/fragment_change_p_w">
+    </fragment>
+
+    <fragment
+        android:id="@+id/LanguageFragment"
+        android:name="com.example.epl498luxzio.LanguageFragment"
+        tools:layout="@layout/fragment_language">
+    </fragment>
 
 
 </navigation>

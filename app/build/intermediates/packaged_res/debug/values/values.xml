@@ -4,13 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="action_settings">Settings</string>
-    <string name="app_name">EPL498Luxzio</string>
+    <string name="app_name">luxzio</string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="gcm_defaultSenderId" translatable="false">433521477747</string>
-    <string name="google_api_key" translatable="false">AIzaSyAo4uJwWoyas3wPIaxlEySoD4eTd4_kqWI</string>
-    <string name="google_app_id" translatable="false">1:433521477747:android:561d6202b8afa82e5b8206</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAo4uJwWoyas3wPIaxlEySoD4eTd4_kqWI</string>
-    <string name="google_storage_bucket" translatable="false">epl498-f5f0c.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">366828665251</string>
+    <string name="google_api_key" translatable="false">AIzaSyC3SpggUNA0u-6xvJPmEvQzwH_2giIr9p4</string>
+    <string name="google_app_id" translatable="false">1:366828665251:android:d6d554d445ce2aec01c216</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC3SpggUNA0u-6xvJPmEvQzwH_2giIr9p4</string>
+    <string name="google_storage_bucket" translatable="false">luxzio.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -50,11 +50,51 @@
     </string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="project_id" translatable="false">epl498-f5f0c</string>
+    <string name="project_id" translatable="false">luxzio</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <style name="Base.Theme.EPL498Luxzio" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.EPL498Luxzio" parent="Theme.AppCompat.Light.NoActionBar">
         
         
     </style>
     <style name="Theme.EPL498Luxzio" parent="Base.Theme.EPL498Luxzio"/>
+    <style name="already_have_an_account">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+    </style>
+    <style name="create_account">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="dont_have_an_account">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+    </style>
+    <style name="forgot_password">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+    </style>
+    <style name="login_to_your_account">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+    </style>
+    <style name="to_get_started_now">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+    </style>
+    <style name="welcome">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#E0FFFFFF</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
 </resources>

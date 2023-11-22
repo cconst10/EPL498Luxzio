@@ -1,18 +1,15 @@
 package com.example.epl498luxzio;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomePageFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+
 public class HomePageFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -58,7 +55,32 @@ public class HomePageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_page, container, false);
+
+        // Find the Settings button in your layout
+        ImageView settingsButton = view.findViewById(R.id.settingsbutton);
+
+        // Set a click listener on the Settings button
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Use Navigation to navigate to the SettingsFragment
+                Navigation.findNavController(v).navigate(R.id.settingsbutton);
+            }
+        });
+
+        // Find the four seasons image button in your layout
+        ImageView four_seasons_hotel = view.findViewById(R.id.four_seasons_hotel);
+
+        // Set a click listener on four seasons image
+        four_seasons_hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Use Navigation to navigate to the About page Fragment
+                Navigation.findNavController(v).navigate(R.id.four_seasons_hotel);
+            }
+        });
+
+        return view;
     }
 }

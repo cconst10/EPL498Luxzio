@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -48,14 +47,10 @@ public final class FragmentAboutPageBinding implements ViewBinding {
   @NonNull
   public final ImageView topImage;
 
-  @NonNull
-  public final LinearLayout whiteSection;
-
   private FragmentAboutPageBinding(@NonNull FrameLayout rootView, @NonNull ImageView appLogo,
       @NonNull RelativeLayout darkPurpleSection, @NonNull RelativeLayout darkerGrayishPurpleSection,
       @NonNull ImageView star0, @NonNull ImageView star1, @NonNull ImageView star2,
-      @NonNull ImageView star3, @NonNull ImageView star4, @NonNull ImageView topImage,
-      @NonNull LinearLayout whiteSection) {
+      @NonNull ImageView star3, @NonNull ImageView star4, @NonNull ImageView topImage) {
     this.rootView = rootView;
     this.appLogo = appLogo;
     this.darkPurpleSection = darkPurpleSection;
@@ -66,7 +61,6 @@ public final class FragmentAboutPageBinding implements ViewBinding {
     this.star3 = star3;
     this.star4 = star4;
     this.topImage = topImage;
-    this.whiteSection = whiteSection;
   }
 
   @Override
@@ -150,14 +144,8 @@ public final class FragmentAboutPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.whiteSection;
-      LinearLayout whiteSection = ViewBindings.findChildViewById(rootView, id);
-      if (whiteSection == null) {
-        break missingId;
-      }
-
       return new FragmentAboutPageBinding((FrameLayout) rootView, appLogo, darkPurpleSection,
-          darkerGrayishPurpleSection, star0, star1, star2, star3, star4, topImage, whiteSection);
+          darkerGrayishPurpleSection, star0, star1, star2, star3, star4, topImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

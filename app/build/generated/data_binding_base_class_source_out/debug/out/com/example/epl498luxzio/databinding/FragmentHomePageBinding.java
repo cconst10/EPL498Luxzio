@@ -4,10 +4,11 @@ package com.example.epl498luxzio.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,16 +21,25 @@ import java.lang.String;
 
 public final class FragmentHomePageBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
-
-  @NonNull
-  public final EditText SearchSubmitButton;
+  private final ScrollView rootView;
 
   @NonNull
   public final EditText adultsChildrenRoomsField;
 
   @NonNull
+  public final ImageView amarandeHotel;
+
+  @NonNull
+  public final TextView amarandeHotelText;
+
+  @NonNull
+  public final ImageView apartments;
+
+  @NonNull
   public final ImageView appLogo;
+
+  @NonNull
+  public final TextView bestQualityHotelsInCyprus;
 
   @NonNull
   public final EditText checkInDateField;
@@ -44,88 +54,81 @@ public final class FragmentHomePageBinding implements ViewBinding {
   public final RelativeLayout darkerGrayishPurpleSection;
 
   @NonNull
+  public final ImageView elysiumHotel;
+
+  @NonNull
+  public final TextView elysiumHotelText;
+
+  @NonNull
   public final EditText enterLocationField;
 
   @NonNull
-  public final TextView findbytype;
+  public final TextView findByPropertyType;
 
   @NonNull
-  public final ImageView hotel1;
+  public final ImageView fourSeasonsHotel;
 
   @NonNull
-  public final TextView hotel1text;
+  public final TextView fourSeasonsHotelText;
 
   @NonNull
-  public final ImageView hotel2;
+  public final ImageView hotels;
 
   @NonNull
-  public final TextView hotel2text;
+  public final ImageView olympicLagoonResorts;
 
   @NonNull
-  public final ImageView hotel3;
+  public final TextView olympicLagoonResortsText;
 
   @NonNull
-  public final TextView hotel3text;
-
-  @NonNull
-  public final ImageView hotel4;
-
-  @NonNull
-  public final TextView hotel4text;
+  public final Button searchButton;
 
   @NonNull
   public final ImageView settingsbutton;
 
   @NonNull
-  public final ImageView type1;
+  public final ImageView villas;
 
-  @NonNull
-  public final ImageView type2;
-
-  @NonNull
-  public final ImageView type3;
-
-  @NonNull
-  public final View whiteSection;
-
-  private FragmentHomePageBinding(@NonNull FrameLayout rootView,
-      @NonNull EditText SearchSubmitButton, @NonNull EditText adultsChildrenRoomsField,
-      @NonNull ImageView appLogo, @NonNull EditText checkInDateField,
-      @NonNull EditText checkOutDateField, @NonNull RelativeLayout darkPurpleSection,
-      @NonNull RelativeLayout darkerGrayishPurpleSection, @NonNull EditText enterLocationField,
-      @NonNull TextView findbytype, @NonNull ImageView hotel1, @NonNull TextView hotel1text,
-      @NonNull ImageView hotel2, @NonNull TextView hotel2text, @NonNull ImageView hotel3,
-      @NonNull TextView hotel3text, @NonNull ImageView hotel4, @NonNull TextView hotel4text,
-      @NonNull ImageView settingsbutton, @NonNull ImageView type1, @NonNull ImageView type2,
-      @NonNull ImageView type3, @NonNull View whiteSection) {
+  private FragmentHomePageBinding(@NonNull ScrollView rootView,
+      @NonNull EditText adultsChildrenRoomsField, @NonNull ImageView amarandeHotel,
+      @NonNull TextView amarandeHotelText, @NonNull ImageView apartments,
+      @NonNull ImageView appLogo, @NonNull TextView bestQualityHotelsInCyprus,
+      @NonNull EditText checkInDateField, @NonNull EditText checkOutDateField,
+      @NonNull RelativeLayout darkPurpleSection, @NonNull RelativeLayout darkerGrayishPurpleSection,
+      @NonNull ImageView elysiumHotel, @NonNull TextView elysiumHotelText,
+      @NonNull EditText enterLocationField, @NonNull TextView findByPropertyType,
+      @NonNull ImageView fourSeasonsHotel, @NonNull TextView fourSeasonsHotelText,
+      @NonNull ImageView hotels, @NonNull ImageView olympicLagoonResorts,
+      @NonNull TextView olympicLagoonResortsText, @NonNull Button searchButton,
+      @NonNull ImageView settingsbutton, @NonNull ImageView villas) {
     this.rootView = rootView;
-    this.SearchSubmitButton = SearchSubmitButton;
     this.adultsChildrenRoomsField = adultsChildrenRoomsField;
+    this.amarandeHotel = amarandeHotel;
+    this.amarandeHotelText = amarandeHotelText;
+    this.apartments = apartments;
     this.appLogo = appLogo;
+    this.bestQualityHotelsInCyprus = bestQualityHotelsInCyprus;
     this.checkInDateField = checkInDateField;
     this.checkOutDateField = checkOutDateField;
     this.darkPurpleSection = darkPurpleSection;
     this.darkerGrayishPurpleSection = darkerGrayishPurpleSection;
+    this.elysiumHotel = elysiumHotel;
+    this.elysiumHotelText = elysiumHotelText;
     this.enterLocationField = enterLocationField;
-    this.findbytype = findbytype;
-    this.hotel1 = hotel1;
-    this.hotel1text = hotel1text;
-    this.hotel2 = hotel2;
-    this.hotel2text = hotel2text;
-    this.hotel3 = hotel3;
-    this.hotel3text = hotel3text;
-    this.hotel4 = hotel4;
-    this.hotel4text = hotel4text;
+    this.findByPropertyType = findByPropertyType;
+    this.fourSeasonsHotel = fourSeasonsHotel;
+    this.fourSeasonsHotelText = fourSeasonsHotelText;
+    this.hotels = hotels;
+    this.olympicLagoonResorts = olympicLagoonResorts;
+    this.olympicLagoonResortsText = olympicLagoonResortsText;
+    this.searchButton = searchButton;
     this.settingsbutton = settingsbutton;
-    this.type1 = type1;
-    this.type2 = type2;
-    this.type3 = type3;
-    this.whiteSection = whiteSection;
+    this.villas = villas;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -150,21 +153,39 @@ public final class FragmentHomePageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.SearchSubmitButton;
-      EditText SearchSubmitButton = ViewBindings.findChildViewById(rootView, id);
-      if (SearchSubmitButton == null) {
-        break missingId;
-      }
-
       id = R.id.adultsChildrenRoomsField;
       EditText adultsChildrenRoomsField = ViewBindings.findChildViewById(rootView, id);
       if (adultsChildrenRoomsField == null) {
         break missingId;
       }
 
+      id = R.id.amarande_hotel;
+      ImageView amarandeHotel = ViewBindings.findChildViewById(rootView, id);
+      if (amarandeHotel == null) {
+        break missingId;
+      }
+
+      id = R.id.amarande_hotel_text;
+      TextView amarandeHotelText = ViewBindings.findChildViewById(rootView, id);
+      if (amarandeHotelText == null) {
+        break missingId;
+      }
+
+      id = R.id.apartments;
+      ImageView apartments = ViewBindings.findChildViewById(rootView, id);
+      if (apartments == null) {
+        break missingId;
+      }
+
       id = R.id.appLogo;
       ImageView appLogo = ViewBindings.findChildViewById(rootView, id);
       if (appLogo == null) {
+        break missingId;
+      }
+
+      id = R.id.best_quality_hotels_in_cyprus;
+      TextView bestQualityHotelsInCyprus = ViewBindings.findChildViewById(rootView, id);
+      if (bestQualityHotelsInCyprus == null) {
         break missingId;
       }
 
@@ -192,63 +213,63 @@ public final class FragmentHomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.elysium_hotel;
+      ImageView elysiumHotel = ViewBindings.findChildViewById(rootView, id);
+      if (elysiumHotel == null) {
+        break missingId;
+      }
+
+      id = R.id.elysium_hotel_text;
+      TextView elysiumHotelText = ViewBindings.findChildViewById(rootView, id);
+      if (elysiumHotelText == null) {
+        break missingId;
+      }
+
       id = R.id.enterLocationField;
       EditText enterLocationField = ViewBindings.findChildViewById(rootView, id);
       if (enterLocationField == null) {
         break missingId;
       }
 
-      id = R.id.findbytype;
-      TextView findbytype = ViewBindings.findChildViewById(rootView, id);
-      if (findbytype == null) {
+      id = R.id.find_by_property_type;
+      TextView findByPropertyType = ViewBindings.findChildViewById(rootView, id);
+      if (findByPropertyType == null) {
         break missingId;
       }
 
-      id = R.id.hotel1;
-      ImageView hotel1 = ViewBindings.findChildViewById(rootView, id);
-      if (hotel1 == null) {
+      id = R.id.four_seasons_hotel;
+      ImageView fourSeasonsHotel = ViewBindings.findChildViewById(rootView, id);
+      if (fourSeasonsHotel == null) {
         break missingId;
       }
 
-      id = R.id.hotel1text;
-      TextView hotel1text = ViewBindings.findChildViewById(rootView, id);
-      if (hotel1text == null) {
+      id = R.id.four_seasons_hotel_text;
+      TextView fourSeasonsHotelText = ViewBindings.findChildViewById(rootView, id);
+      if (fourSeasonsHotelText == null) {
         break missingId;
       }
 
-      id = R.id.hotel2;
-      ImageView hotel2 = ViewBindings.findChildViewById(rootView, id);
-      if (hotel2 == null) {
+      id = R.id.hotels;
+      ImageView hotels = ViewBindings.findChildViewById(rootView, id);
+      if (hotels == null) {
         break missingId;
       }
 
-      id = R.id.hotel2text;
-      TextView hotel2text = ViewBindings.findChildViewById(rootView, id);
-      if (hotel2text == null) {
+      id = R.id.olympic_lagoon_resorts;
+      ImageView olympicLagoonResorts = ViewBindings.findChildViewById(rootView, id);
+      if (olympicLagoonResorts == null) {
         break missingId;
       }
 
-      id = R.id.hotel3;
-      ImageView hotel3 = ViewBindings.findChildViewById(rootView, id);
-      if (hotel3 == null) {
+      id = R.id.olympic_lagoon_resorts_text;
+      TextView olympicLagoonResortsText = ViewBindings.findChildViewById(rootView, id);
+      if (olympicLagoonResortsText == null) {
         break missingId;
       }
 
-      id = R.id.hotel3text;
-      TextView hotel3text = ViewBindings.findChildViewById(rootView, id);
-      if (hotel3text == null) {
-        break missingId;
-      }
-
-      id = R.id.hotel4;
-      ImageView hotel4 = ViewBindings.findChildViewById(rootView, id);
-      if (hotel4 == null) {
-        break missingId;
-      }
-
-      id = R.id.hotel4text;
-      TextView hotel4text = ViewBindings.findChildViewById(rootView, id);
-      if (hotel4text == null) {
+      id = R.id.search_button;
+      Button searchButton = ViewBindings.findChildViewById(rootView, id);
+      if (searchButton == null) {
         break missingId;
       }
 
@@ -258,35 +279,18 @@ public final class FragmentHomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.type1;
-      ImageView type1 = ViewBindings.findChildViewById(rootView, id);
-      if (type1 == null) {
+      id = R.id.villas;
+      ImageView villas = ViewBindings.findChildViewById(rootView, id);
+      if (villas == null) {
         break missingId;
       }
 
-      id = R.id.type2;
-      ImageView type2 = ViewBindings.findChildViewById(rootView, id);
-      if (type2 == null) {
-        break missingId;
-      }
-
-      id = R.id.type3;
-      ImageView type3 = ViewBindings.findChildViewById(rootView, id);
-      if (type3 == null) {
-        break missingId;
-      }
-
-      id = R.id.whiteSection;
-      View whiteSection = ViewBindings.findChildViewById(rootView, id);
-      if (whiteSection == null) {
-        break missingId;
-      }
-
-      return new FragmentHomePageBinding((FrameLayout) rootView, SearchSubmitButton,
-          adultsChildrenRoomsField, appLogo, checkInDateField, checkOutDateField, darkPurpleSection,
-          darkerGrayishPurpleSection, enterLocationField, findbytype, hotel1, hotel1text, hotel2,
-          hotel2text, hotel3, hotel3text, hotel4, hotel4text, settingsbutton, type1, type2, type3,
-          whiteSection);
+      return new FragmentHomePageBinding((ScrollView) rootView, adultsChildrenRoomsField,
+          amarandeHotel, amarandeHotelText, apartments, appLogo, bestQualityHotelsInCyprus,
+          checkInDateField, checkOutDateField, darkPurpleSection, darkerGrayishPurpleSection,
+          elysiumHotel, elysiumHotelText, enterLocationField, findByPropertyType, fourSeasonsHotel,
+          fourSeasonsHotelText, hotels, olympicLagoonResorts, olympicLagoonResortsText,
+          searchButton, settingsbutton, villas);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
