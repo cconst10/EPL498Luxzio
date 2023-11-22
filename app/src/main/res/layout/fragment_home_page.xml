@@ -250,6 +250,22 @@
                 android:src="@drawable/villas" />
         </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="Days until Christmas"/>
+
+    </RelativeLayout>
+
          <TextView
             android:id="@+id/four_seasons_hotel_text"
             android:layout_width="wrap_content"
@@ -293,6 +309,26 @@
             android:textColor="#E0FFFFFF"
             android:textSize="9sp"
             android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/weatherTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <Spinner
+        android:id="@+id/dropdownCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+
 
 </FrameLayout>
 </ScrollView>
