@@ -71,7 +71,6 @@
         <action
             android:id="@+id/btnLogout"
             app:destination="@id/LoginScreenFragment" />
-
     </fragment>
 
     <fragment
@@ -86,6 +85,10 @@
         <action
             android:id="@+id/four_seasons_hotel"
             app:destination="@id/AboutPageFragment" />
+
+        <action
+            android:id="@+id/pinLocationButton"
+            app:destination="@id/MapFragment" />
     </fragment>
 
     <fragment
@@ -106,5 +109,9 @@
         tools:layout="@layout/fragment_language">
     </fragment>
 
-
+    <fragment
+        android:id="@+id/MapFragment"
+        android:name="com.example.epl498luxzio.MapFragment"
+        tools:layout="@layout/fragment_map">
+    </fragment>
 </navigation>
