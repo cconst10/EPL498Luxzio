@@ -57,6 +57,18 @@ public class HomePageFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home_page, container, false);
 
+        // Find the Pin Location button in your layout
+        ImageView pinLocationButton = view.findViewById(R.id.pinLocationButton);
+
+        // Set a click listener on the Pin Location button
+        pinLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Use Navigation to navigate to the SettingsFragment
+                Navigation.findNavController(v).navigate(R.id.pinLocationButton);
+            }
+        });
+
         // Find the Settings button in your layout
         ImageView settingsButton = view.findViewById(R.id.settingsbutton);
 
