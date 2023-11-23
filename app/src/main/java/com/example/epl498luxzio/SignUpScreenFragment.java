@@ -63,7 +63,7 @@ public class SignUpScreenFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         db = FirebaseFirestore.getInstance();
-        usersCollection = db.collection("users");
+        usersCollection = db.collection("Users");
         dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     }
 
