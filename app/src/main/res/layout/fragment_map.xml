@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment"
+    android:background="#053540">
+
+    <RelativeLayout
+        android:id="@+id/darkerGrayishPurpleSection"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:background="#343331"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/luxziologo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/available_hotels_locations"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="160dp"
+        android:text="Available Hotels - Locations"
+        android:textColor="#E0FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- MapView to display the map -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"/>
+</FrameLayout>

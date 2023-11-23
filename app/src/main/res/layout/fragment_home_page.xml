@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomePageFragment">
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePageFragment">
@@ -27,6 +26,16 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="120dp"
             android:src="@drawable/luxziologo" />
+
+        <ImageView
+            android:id="@+id/pinLocationButton"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/pin" />
 
         <ImageView
             android:id="@+id/settingsbutton"
@@ -250,22 +259,6 @@
                 android:src="@drawable/villas" />
         </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FF0000"
-        android:padding="16dp">
-
-        <TextView
-            android:id="@+id/tvCountdown"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="12sp"
-            android:text="Days until Christmas"/>
-
-    </RelativeLayout>
-
          <TextView
             android:id="@+id/four_seasons_hotel_text"
             android:layout_width="wrap_content"
@@ -310,25 +303,37 @@
             android:textSize="9sp"
             android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/weatherTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    />
+        <TextView
+            android:id="@+id/hotels_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="760dp"
+            android:layout_marginLeft="50dp"
+            android:text="Hotels"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    />
+        <TextView
+            android:id="@+id/apartments_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="760dp"
+            android:layout_marginLeft="168dp"
+            android:text="Apartments"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
 
-    <Spinner
-        android:id="@+id/dropdownCity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    />
-
-
-
+        <TextView
+            android:id="@+id/villas_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="760dp"
+            android:layout_marginLeft="305dp"
+            android:text="Villas"
+            android:textColor="#E0FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"/>
 </FrameLayout>
 </ScrollView>
