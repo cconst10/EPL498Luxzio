@@ -4,9 +4,14 @@
 
     <!-- Post Notification permision for Firebase Cloud Messaging-->
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:node="remove"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="com.example.epl498luxzio.C2D_MESSAGE" />
 
@@ -36,6 +41,10 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.EPL498Luxzio">
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAjUgEyD5At7X-_UG1c2HbrEzabnNuOn5E" />
 
         <service
             android:name=".MyFirebaseMessagingService"
